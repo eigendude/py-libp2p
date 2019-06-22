@@ -28,6 +28,6 @@ setuptools.setup(
         "lru-dict>=1.1.6",
         "aio_timers"
     ],
-    packages=["libp2p"],
+    packages=setuptools.find_packages(exclude=["tests"]),
     zip_safe=False,
 )
