@@ -24,13 +24,6 @@ class IMuxedConn(ABC):
         """
 
     @abstractmethod
-    def is_closed(self):
-        """
-        check connection is fully closed
-        :return: true if successful
-        """
-
-    @abstractmethod
     def open_stream(self, protocol_id, multi_addr):
         """
         creates a new muxed_stream

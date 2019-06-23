@@ -45,12 +45,6 @@ class Mplex(IMuxedConn):
         """
         self.raw_conn.close()
 
-    def is_closed(self):
-        """
-        check connection is fully closed
-        :return: true if successful
-        """
-
     async def read_buffer(self, stream_id):
         """
         Read a message from stream_id's buffer, check raw connection for new messages
